@@ -1,0 +1,920 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* /////////////////////////////// header //////////////////////////////////////// */
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #266aa697;
+    position: fixed;
+    padding: 10px;
+    z-index: 20;
+}
+
+header i,
+input,
+.header li {
+    float: left;
+}
+
+ul {
+    float: right;
+    margin-right: 25px;
+}
+
+li {
+    list-style: none;
+    text-transform: capitalize;
+    margin-right: 25px;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+input {
+    border-radius: 20px;
+    position: absolute;
+    height: 30px;
+    width: 240px;
+    margin-left: 20px;
+    border: none;
+    padding: 0 10px;
+}
+
+.homeicon {
+    color: white;
+    font-size: large;
+    margin-left: 10px;
+}
+
+.searchicon {
+    font-size: xx-small;
+    position: absolute;
+    top: 18px;
+    left: 85px;
+    color: black;
+}
+
+.drop {
+    border: 1px solid #266AA6;
+    border-radius: 20px;
+    position: absolute;
+    visibility: hidden;
+    width: 150px;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.header li:hover .drop {
+    visibility: visible;
+}
+
+.drop li {
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.drop li a {
+    color: #266AA6;
+}
+
+.header li {
+    position: relative;
+}
+
+.header li::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    border-bottom: 3px solid #38bdf8;
+    left: 0;
+}
+
+.drop li::before {
+    left: 50%;
+    margin: 20px 0;
+    transform: translate(-50%, 0);
+}
+
+.header li:hover {
+    cursor: pointer;
+}
+
+.header li:hover::before {
+    transition: 0.5s;
+    width: 100%;
+}
+
+.drop li:hover::before {
+    width: 80%;
+}
+
+/* ////////////////////////////////////// /header ////////////////////////////////// */
+
+/* ///////////////////////////////////// home ////////////////////////////////////// */
+
+.home {
+    background-image: url(../images/front-view-elegant-perfume-colored-flowers-light-blue-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.home-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.home-content {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home-content h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 65px;
+    width: max-content;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.home-content p {
+    color: #E2E8F0;
+    font-size: x-small;
+    margin: 20px auto;
+    letter-spacing: 2px;
+    width: 900px;
+}
+
+.home-content button {
+    text-transform: capitalize;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+}
+
+.home-content button:hover {
+    opacity: 0.4;
+}
+
+.btn2 {
+    background-color: #d48078;
+    color: white;
+}
+
+/* //////////////////////////////// /home /////////////////////////////////////// */
+
+/* ///////////////////////////////// welcome to website ///////////////////////// */
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.parent {
+    height: 100vh;
+    padding-top: 60px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bolder;
+    overflow: auto;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+hr {
+    border: none;
+    background-color: #464AA6;
+    height: 5px;
+    width: 70px;
+    margin: 10px auto 50px;
+}
+
+.card {
+    float: left;
+    width: 30%;
+    border: 1px solid rgb(100, 107, 206);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+.card * {
+    margin: 15px 0;
+}
+
+i {
+    color: #05C7F2;
+}
+
+.card a {
+    color: #03aed4;
+}
+
+.card p {
+    color: gray;
+}
+
+.card h3,
+.card i {
+    font-size: x-large;
+}
+
+.card2 {
+    margin: 0 5%;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #62d9f480;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.card:hover::before {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+
+.card:hover h3 {
+    color: #3187d3;
+}
+
+.card:hover i,
+.card:hover a {
+    color: #3187d3;
+}
+
+.card:hover p {
+    color: black;
+}
+
+/* /////////////////////////// /welcome to website ////////////////////////////// */
+
+/* ////////////////////////////// featured works //////////////////////////////// */
+
+.featured {
+    background-color: #F1F5F9;
+}
+
+.img {
+    height: 30%;
+    width: 30%;
+    float: left;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.img1 {
+    background-image: url(../images/ecofriendly-beauty-product.jpg);
+}
+
+.img2 {
+    background-image: url(../images/elegant-vegan-alcohol-arrangement.jpg);
+}
+
+.img2,
+.img5 {
+    margin: 0 5%;
+}
+
+.img3 {
+    background-image: url(../images/perfume-with-floral-aroma-burst-generative-ai.jpg);
+}
+
+.img4 {
+    background-image: url(../images/flower.jpg);
+}
+
+.img5 {
+    background-image: url(../images/mockup-tube-bottle-skin-care-cosmetic-perfume-fragrance-product-branding-cream-lotion.jpg);
+}
+
+.img6 {
+    background-image: url(../images/perfume-with-floral-aroma-burst-generative-ai_74760-5026.jpg);
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.overlay * {
+    margin: 20px 0;
+}
+
+.img h3 {
+    color: #94A3B8;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+.img p {
+    color: white;
+    text-transform: none;
+}
+
+.img a {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.sec3icon2 {
+    color: palevioletred;
+}
+
+.sec3icon3 {
+    color: #E60023;
+}
+
+.img:hover .overlay {
+    visibility: visible;
+}
+
+/* /////////////////////////////// /featured works //////////////////////////////// */
+
+/* /////////////////////////////////// offers ///////////////////////////////////// */
+
+.offers {
+    height: 100vh;
+    width: 100%;
+}
+
+.offers-container {
+    width: 80%;
+    margin: auto;
+}
+
+.offers .card {
+    text-align: left;
+    text-transform: none;
+    padding-left: 70px;
+    height: 210px;
+}
+
+.offers i {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+
+.offers h3 {
+    display: inline;
+    font-size: 26px;
+}
+
+.offers .card {
+    margin-bottom: 50px;
+}
+
+.offers .card:hover h3 {
+    color: #3187d3;
+}
+
+/* //////////////////////////////// /offers ////////////////////////////////////// */
+
+/* //////////////////////////////// why choose us ///////////////////////////////// */
+
+.choose-container hr {
+    margin-left: 0;
+}
+
+.choose-parent {
+    height: 100vh;
+    overflow: auto;
+}
+
+.paragraphs {
+    width: 50%;
+    float: left;
+}
+
+.choose-parent h2 {
+    text-transform: capitalize;
+}
+
+.main-p {
+    color: rgb(178, 178, 180);
+    margin-bottom: 30px;
+}
+
+.choose-parent span {
+    color: gray;
+    line-height: 60px;
+}
+
+.image {
+    float: right;
+    position: relative;
+}
+
+.circles {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+    background-color: rgb(178, 178, 180);
+}
+
+.circle1,
+.circle:hover {
+    background-color: #56c3db80;
+}
+
+/* //////////////////////////////// /why choose us ///////////////////////////////// */
+
+/* //////////////////////////////// achievements //////////////////////////////////// */
+
+.achievements {
+    height: 60vh;
+}
+
+.achievement-container {
+    width: 100%;
+}
+
+.achievement-parent {
+    background-image: url(../images/choose.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80%;
+    position: relative;
+}
+
+.achi-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.achi {
+    float: left;
+    width: 25%;
+}
+
+.achi p {
+    color: white;
+    text-transform: none;
+}
+
+.achi i {
+    font-size: xx-large;
+    color: #989ef0;
+    margin-bottom: 20px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+/* //////////////////////////////// /achievements //////////////////////////////////// */
+
+/* //////////////////////////////// pricing //////////////////////////////////// */
+
+.pricing-parent p {
+    color: black;
+    margin: 20px 0;
+}
+
+.pricing-parent h3 {
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+.price {
+    border: 3px solid #8995D9;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 25px 0;
+}
+
+.price p {
+    margin: 0;
+}
+
+.p-price {
+    font-size: x-large;
+}
+
+.card button {
+    width: 180px;
+    height: 30px;
+    border: 2px solid #464AA6;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+.pricing-parent .card::before {
+    height: 0;
+    width: 100%;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.pricing-parent .card:hover::before {
+    height: 100%;
+}
+
+.pricing-parent .card:hover h3 {
+    color: #1f23a0;
+}
+
+.card:hover .price {
+    border-color: #464AA6;
+}
+
+/* //////////////////////////////// /pricing //////////////////////////////////// */
+
+/* ///////////////////////////////// tests //////////////////////////////////////*/
+
+/* test == Testimonials Section */
+
+.tests {
+    height: 70vh;
+    width: 100%;
+}
+
+.tests-container {
+    width: 100%;
+}
+
+.tests-parent {
+    background-image: url(../images/front-view-cologne-bottle-rotten-tree-branch-isolated-light-blue-background_140725-145204.jpg);
+    background-position: top;
+}
+
+.tests-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    width: 70%;
+    text-transform: capitalize;
+}
+
+.tests-card {
+    width: 50%;
+    position: relative;
+}
+
+.tests-card1 {
+    float: left;
+}
+
+.tests-card2 {
+    float: right;
+}
+
+.card-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    margin-right: 30px;
+    position: absolute;
+    left: 0;
+}
+
+.card1-img {
+    background-image: url(../images/cheerful-beautiful-european-female-with-pleasant-smile_273609-28574.jpg);
+    background-position: center;
+}
+
+.card2-img {
+    background-image: url(../images/portrait-handsome-smiling-young-man-folded-arms-smiling-joyful-cheerful-men-crossed-hands-isolated-studio-shot-172869765.webp);
+}
+
+.name {
+    color: white;
+    font-size: x-large;
+}
+
+.position {
+    color: #38BDF8;
+}
+
+.profile {
+    margin-bottom: 30px;
+    padding-left: 100px;
+}
+
+.profile p {
+    margin-top: 5px;
+}
+
+.card-p {
+    width: 88%;
+    line-height: 30px;
+    color: #E2E8F0;
+}
+
+/* ////////////////////////////////// /tests ////////////////////////////////////// */
+
+/* ////////////////////////////////// our team ////////////////////////////////////// */
+
+
+.member {
+    background-color: rgb(223, 221, 221);
+    width: 30%;
+    float: left;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.member i {
+    color: white;
+}
+
+.member a {
+    background-color: #77D9D9;
+    display: block;
+    margin-left: auto;
+    width: fit-content;
+    padding: 8px;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.member-img {
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.member-img1 {
+    background-image: url(../images/artist-white_1368-3546.avif);
+}
+
+.member-img2 {
+    background-image: url(../images/guy-blue-jacket-with-victory-fingers_1187-3001.jpg);
+}
+
+.member-img3 {
+    background-image: url(../images/positive-brunet-man-with-crossed-arms_1187-5797.jpg);
+}
+
+.member h3 {
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.member p {
+    color: #64748B;
+    text-transform: uppercase;
+}
+
+.member::after {
+    content: "";
+    background-color: #70dcf455;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.member:hover::after {
+    height: 100%;
+    transition: 0.5s;
+}
+
+.member-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.member:hover a,
+.member:hover .member-overlay {
+    visibility: visible;
+}
+
+.member:hover h3 {
+    color: white;
+}
+
+.member:hover p {
+    color: #1E3A8A;
+}
+
+/* ////////////////////////////////// /our team ////////////////////////////////////// */
+
+/* ///////////////////////////////// recent news //////////////////////////////////// */
+
+.news-parent {
+    height: 130vh;
+}
+
+.news .card::before {
+    width: 100%;
+}
+
+.news-img {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px auto;
+}
+
+.news-img1 {
+    background-image: url(../images/aa-businessman-using-mobile-phone-smiling_176420-18953.jpg);
+}
+
+.news-img2 {
+    background-image: url(../images/amazing-cheerful-business-woman-standing-with-arms-crossed_171337-8487.jpg);
+}
+
+.news-img3 {
+    background-image: url(../images/handsome-bearded-guy-posing-against-white-wall_273609-20597.jpg);
+}
+
+.news h3 {
+    font-size: large;
+}
+
+.news .card {
+    padding: 20px 0px;
+    width: 32%;
+    overflow: auto;
+}
+
+.news .card2 {
+    margin: 0 2%;
+}
+
+.news i {
+    font-size: medium;
+}
+
+.card ul {
+    float: left;
+    text-align: center;
+    margin: 0;
+}
+
+.news .card::before {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.card ul li {
+    float: left;
+    margin-left: 20px;
+}
+
+.news p {
+    color: rgb(90, 88, 88);
+    width: 365px;
+    height: 131px;
+    font-size: 22px;
+    margin: 20px auto;
+}
+
+.news a {
+    color: -webkit-link;
+    text-transform: none;
+}
+
+.news i,
+.news .card:hover a {
+    color: rgb(79, 79, 233);
+}
+
+.news .card:hover i {
+    color: rgb(79, 79, 233);
+}
+
+.news .card:hover h3 {
+    color: #1E3A8A;
+}
+
+/* ///////////////////////////////// /recent news //////////////////////////////////// */
+
+/* /////////////////////////////////// footer ////////////////////////////////////// */
+
+.footer {
+    background-color: #1E293B;
+}
+
+.footer-container {
+    width: 30%;
+}
+
+.footer-parent {
+    height: fit-content;
+    padding: 25px 0;
+}
+
+.footer img {
+    border-radius: 20px;
+}
+
+.social {
+    width: 100%;
+    margin: 0;
+    padding-left: 40px;
+}
+
+.social li {
+    float: left;
+    background-color: #2563EB;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px 3px;
+}
+
+.footer i {
+    color: white;
+    font-size: larger;
+}
+
+.footer p {
+    text-transform: uppercase;
+    color: #94A3B8;
+    font-size: xx-small;
+
+}
+
+.footer li:hover {
+    background-color: rgb(10, 34, 210);
+    transition: 0.5s;
+}
+
+/* ////////////////////////////////// /footer ////////////////////////////////////// */
