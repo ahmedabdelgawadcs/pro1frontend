@@ -868,10 +868,7 @@ i {
 }
 
 .news i,
-.news .card:hover a {
-    color: rgb(79, 79, 233);
-}
-
+.news .card:hover a,
 .news .card:hover i {
     color: rgb(79, 79, 233);
 }
