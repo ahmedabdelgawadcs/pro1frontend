@@ -55,12 +55,12 @@ input {
 
 .homeicon {
     color: white;
-    font-size: large;
+    font-size: x-large;
     margin-left: 10px;
 }
 
 .searchicon {
-    font-size: xx-small;
+    font-size: small;
     position: absolute;
     top: 18px;
     left: 85px;
@@ -162,7 +162,7 @@ input {
 
 .home-content p {
     color: #E2E8F0;
-    font-size: x-small;
+    font-size: small;
     margin: 20px auto;
     letter-spacing: 2px;
     width: 900px;
@@ -173,6 +173,7 @@ input {
     padding: 15px;
     border-radius: 15px;
     border: none;
+    font-size: large;
 }
 
 .home-content button:hover {
@@ -233,6 +234,7 @@ i {
 
 .card a {
     color: #03aed4;
+    font-size: large;
 }
 
 .card p {
@@ -241,7 +243,7 @@ i {
 
 .card h3,
 .card i {
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .card2 {
@@ -346,19 +348,21 @@ i {
 
 .img h3 {
     color: #94A3B8;
-    font-size: x-large;
+    font-size: xx-large;
     text-transform: uppercase;
 }
 
 .img p {
     color: white;
     text-transform: none;
+    font-size: large;
 }
 
 .img a {
     background-color: white;
     border-radius: 10px;
     padding: 5px 10px;
+    font-size: x-large;
 }
 
 .sec3icon2 {
@@ -438,11 +442,13 @@ i {
 .main-p {
     color: rgb(178, 178, 180);
     margin-bottom: 30px;
+    font-size: larger;
 }
 
 .choose-parent span {
     color: gray;
     line-height: 60px;
+    font-size: larger;
 }
 
 .image {
@@ -509,11 +515,11 @@ i {
 
 .achi p {
     color: white;
-    text-transform: none;
+    font-size: larger;
 }
 
 .achi i {
-    font-size: xx-large;
+    font-size: 40px;
     color: #989ef0;
     margin-bottom: 20px;
 }
@@ -537,7 +543,7 @@ i {
 
 .pricing-parent h3 {
     text-transform: uppercase;
-    font-size: medium;
+    font-size: large;
 }
 
 .price {
@@ -550,13 +556,18 @@ i {
     padding: 25px 0;
 }
 
+.card p {
+    font-size: larger;
+}
+
 .price p {
     margin: 0;
 }
 
-.p-price {
-    font-size: x-large;
+.price .p-price {
+    font-size: 30px;
 }
+
 
 .card button {
     width: 180px;
@@ -564,6 +575,7 @@ i {
     border: 2px solid #464AA6;
     border-radius: 10px;
     text-transform: capitalize;
+    font-size: medium;
 }
 
 .pricing-parent .card::before {
@@ -651,7 +663,7 @@ i {
 
 .name {
     color: white;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .position {
@@ -671,6 +683,7 @@ i {
     width: 88%;
     line-height: 30px;
     color: #E2E8F0;
+    font-size: larger;
 }
 
 /* ////////////////////////////////// /tests ////////////////////////////////////// */
@@ -723,13 +736,14 @@ i {
 }
 
 .member h3 {
-    font-size: x-large;
+    font-size: xx-large;
     margin-bottom: 20px;
 }
 
 .member p {
     color: #64748B;
     text-transform: uppercase;
+    font-size: 20px;
 }
 
 .member::after {
@@ -806,7 +820,7 @@ i {
 }
 
 .news h3 {
-    font-size: large;
+    font-size: x-large;
 }
 
 .news .card {
@@ -820,7 +834,7 @@ i {
 }
 
 .news i {
-    font-size: medium;
+    font-size: x-large;
 }
 
 .card ul {
@@ -850,6 +864,7 @@ i {
 .news a {
     color: -webkit-link;
     text-transform: none;
+    font-size: larger;
 }
 
 .news i,
@@ -908,7 +923,7 @@ i {
 .footer p {
     text-transform: uppercase;
     color: #94A3B8;
-    font-size: xx-small;
+    font-size: small;
 
 }
 
